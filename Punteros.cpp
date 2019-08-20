@@ -96,3 +96,7 @@ void Punteros::imprimirCalculoAlCuboReferenciaReferencia() {
 
     std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
 }
+void Punteros::imprimirCalculoRaizCuadrada() {
+
+}
+

@@ -29,6 +29,7 @@ public:
     static void imprimirCalculoAlCuboReferenciaValor();
     static void imprimirCalculoAlCuboReferenciaPuntero();
     static void imprimirCalculoAlCuboReferenciaReferencia();
+	static void imprimirCalculoRaizCuadrada();
 };
 
 
