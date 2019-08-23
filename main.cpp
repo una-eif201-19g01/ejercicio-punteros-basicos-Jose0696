@@ -31,51 +31,72 @@ void menu() {
     char hold;
 
     do {
-        std::cout << "  Menú Calculos con Punteros\n";
-        std::cout << "  ====================================\n";
-        std::cout << "  1.  Imprimir datos del puntero en un valor de entrada\n";
-        std::cout << "  2.  Imprime el numero 5 al cubo con funcion por VALOR\n";
-        std::cout << "  3.  Imprime el numero 5 al cubo con funcion por PUNTERO3\n";
-        std::cout << "  4.  Imprime el numero 5 al cubo con funcion por REFERENCIA\n";
-        std::cout << "\n";
-        std::cout << "  5.  Exit\n";
-        std::cout << "  ====================================\n";
-        std::cout << "  Enter your selection: ";
-        std::cin >> respuesta;
-        std::cout << std::endl;
+        cout << "  Menu Calculos con Punteros\n";
+        cout << "  ====================================\n";
+        cout << "  1.  Imprimir datos del puntero en un valor de entrada\n";
+		cout << "  2.  Imprime el numero 5 al cubo con funcion por VALOR\n";
+		cout << "  3.  Imprime el numero 5 al cubo con funcion por PUNTERO3\n";
+        cout << "  4.  Imprime el numero 5 al cubo con funcion por REFERENCIA\n";
+		cout << "  5.  Imprime el numero 5 la raiz cuadrada con funcion por VALOR\n";
+		cout << "  6.  Imprime el numero 5 al raiz cuadrada con funcion por PUNTERO3\n";
+		cout << "  7.  Imprime el numero 5 al raiz cuadrada con funcion por REFERENCIA\n";
+        cout << "\n";
+        cout << "  8.  Salir\n";
+        cout << "  ====================================\n";
+        cout << "  Selecciona para entrar: ";
+        cin >> respuesta;
+        cout << endl;
 
         switch (respuesta) {
             case 1:
                 Punteros::imprimirDatosPuntero();
-                std::cin.ignore();
-                std::cin.get();
+                cin.ignore();
+                cin.get();
                 break;
             case 2:
                 Punteros::imprimirCalculoAlCuboReferenciaValor();
-                std::cin.ignore();
-                std::cin.get();
+                cin.ignore();
+                cin.get();
                 break;
             case 3:
                 Punteros::imprimirCalculoAlCuboReferenciaPuntero();
-                std::cin.ignore();
-                std::cin.get();
+                cin.ignore();
+                cin.get();
                 break;
             case 4:
                 Punteros::imprimirCalculoAlCuboReferenciaReferencia();
-                std::cin.ignore();
-                std::cin.get();
+                cin.ignore();
+                cin.get();
                 break;
 
-            case 5:
-                std::cout << "Hasta Luego.\n";
+			case 5:
+				Punteros::imprimirCalculoRaizCuadradaReferenciaValor();
+				cin.ignore();
+				cin.get();
+				break;
+
+			case 6:
+				Punteros::imprimirCalculoRaizCuadradaReferenciaPuntero();
+				cin.ignore();
+				cin.get();
+				break;
+
+			case 7:
+				Punteros::imprimirCalculoRaizCuadradaReferenciaReferencia();
+				cin.ignore();
+				cin.get();
+				break;
+
+            case 8:
+                cout << "Hasta Luego.\n";
                 break;
 
             default:
-                std::cout << respuesta << " es un número inválido\n";
+                cout << respuesta << " es un numero invalido\n";
 
-                std::cout << std::endl;
+                cout << std::endl;
         }
-    } while (respuesta != 5);
+    } while (respuesta != 8);
 }
 
 
