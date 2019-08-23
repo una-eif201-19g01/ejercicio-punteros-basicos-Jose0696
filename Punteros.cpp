@@ -35,19 +35,19 @@ int Punteros::numeroAlCuboReferencia(int& numeroPtr) {
     return numeroPtr;
 }
 
-int Punteros::numeroRaizCuadradaValor(float numero)
+int Punteros::numeroRaizCuadradaValor(double numero)
 {
 	numero = sqrt(numero);
 	return numero;
 }
 
-int Punteros::numeroRaizCuadradaPuntero(float*numeroPtr)
+int Punteros::numeroRaizCuadradaPuntero(double*numeroPtr)
 {
 	*numeroPtr = sqrt(*numeroPtr);
 	return *numeroPtr;
 }
 
-int Punteros::numeroRaizCuadradaReferencia(float& numeroPtr)
+int Punteros::numeroRaizCuadradaReferencia(double& numeroPtr)
 {
 	numeroPtr = sqrt(numeroPtr);
 	return numeroPtr;
@@ -118,7 +118,7 @@ void Punteros::imprimirCalculoAlCuboReferenciaReferencia() {
 
 void Punteros::imprimirCalculoRaizCuadradaReferenciaValor()
 {
-	float numero = 0;
+	double numero = 0;
 
 	numero = 5;
 
@@ -134,7 +134,7 @@ void Punteros::imprimirCalculoRaizCuadradaReferenciaValor()
 
 void Punteros::imprimirCalculoRaizCuadradaReferenciaPuntero()
 {
-	float numero = 0;
+	double numero = 0;
 
 	numero = 5;
 
@@ -150,7 +150,7 @@ void Punteros::imprimirCalculoRaizCuadradaReferenciaPuntero()
 
 void Punteros::imprimirCalculoRaizCuadradaReferenciaReferencia()
 {
-	float numero = 0;
+	double numero = 0;
 
 	numero = 5;
 
